@@ -1,0 +1,4 @@
+cats_approach_training_2024_05_19/
+*.h5
+models/
+best_model.h5
