@@ -10,3 +10,7 @@ My Machine Learning Project
 * Handle imbalanced dataset (not yet implemented).
 
 * Train model. # CatWatcher
+
+* Model0 (Y version) deployed on 25/05/2024 (see bouncer Repo)
+* More training data added. Data cleaned (duplicates removed). We now have a curated dataset. Same model trained on new dataset.
+* Model1 (Y version) deployed on 29/05/2024 (see bouncer Repo). 
