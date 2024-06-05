@@ -33,5 +33,5 @@ def remove_duplicates(directory):
     print("Duplicate processing complete. Duplicates moved to the 'duplicates' folder.")
 
 # Specify the path to your image directory
-image_directory = 'C:/Users/mirela/Documents/gitRepos/CatWatcher/cats_approach_training_2024_05_19/y'
+image_directory = 'C:/Users/mirela/Documents/gitRepos/CatWatcher/cats_hsr_training_2024_06_06/all'
 remove_duplicates(image_directory)
