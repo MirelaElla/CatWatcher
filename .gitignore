@@ -1,6 +1,6 @@
 cats_approach_training_2024_05_19/
 cats_prey_training_2024_06_06/
-cats_hsr_training_2024_06_06/
+cats_hrs_training_2024_06_06/
 *.h5
 models/
 best_model.h5

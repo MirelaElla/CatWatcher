@@ -14,3 +14,5 @@ My Machine Learning Project
 * Model0 (Y version) deployed on 25/05/2024 (see bouncer Repo)
 * More training data added. Data cleaned (duplicates removed). We now have a curated dataset. Same model trained on new dataset.
 * Model1 (Y version) deployed on 29/05/2024 (see bouncer Repo). 
+
+* HRS3 Model deployed on 06/06/2024: This model classifies our cats: Hali (label=0), Rex (label=1), Simba (label=2)

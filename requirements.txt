@@ -1,0 +1,3 @@
+# im cmd terminal nach dem Starten eingeben:
+#C:\\ProgramData\\anaconda3\\Scripts\\activate.bat C:\\ProgramData\\anaconda3
+#conda activate tf
