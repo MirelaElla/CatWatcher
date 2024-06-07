@@ -1,6 +1,15 @@
 # im cmd terminal nach dem Starten eingeben:
 #C:\\ProgramData\\anaconda3\\Scripts\\activate.bat C:\\ProgramData\\anaconda3
-#conda activate tf
-
+#conda activate tf3
+# conda install ipykernel # necessary for jupyter notebook after activating conda environment
 # pip install -r requirements.txt
+# python==3.10 ! only this works with GPU on windows!!!!!
+# CUDA==11.2 cuDNN==8.1 https://www.tensorflow.org/install/source_windows
 numpy
+pandas
+Pillow
+matplotlib
+tensorflow==2.10.1 # only this works with GPU on windows!!!!! DO NOT UPGRADE !!!!!!!!
+
+#for Roboflow inference 
+#inference-cli && inference server start
