@@ -12,6 +12,7 @@ matplotlib
 tensorflow==2.10.1 # only this works with GPU on windows!!!!! DO NOT UPGRADE !!!!!!!!
 scikit-learn
 opencv-python
+lime # for model explanation
 
 #for Roboflow inference 
 #inference-cli && inference server start
