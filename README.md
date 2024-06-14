@@ -9,9 +9,11 @@ This repository is closely related to the [bouncer](https://github.com/mesopotat
 ### Model for Detecting Approaching Cats (2 classes: approaching=1, not approaching=0)
 - **Model0 (Y version)**:
   - Deployed on 25/05/2024 (see bouncer repo)
-  - Additional training data added, duplicates removed, resulting in a curated dataset.
+  - Additional training data added, duplicates removed, resulting in a new dataset.
   - **Model1 (Y version)**: Trained on the new dataset.
     - Deployed on 29/05/2024 (see bouncer repo).
+  - **Model2 (model_approach.tflite)**: Trained on the new dataset with new model architecture.
+    - Deployed beginning of June 2024
 
 ### Model for Classifying Our Cats (3 classes: Hali=0, Rex=1, Simba=2)
 - **HRS3 Model**:
@@ -19,7 +21,7 @@ This repository is closely related to the [bouncer](https://github.com/mesopotat
   - Bug fix applied on 07/06/2024 (see bouncer repo).
 
 ### Model for Detecting whether Simba brings Prey (2 classes: prey=1, no prey=0)
-- coming soon
+- model_prey.h5/model_prey.tflite
 
 ### Model for Generalized Prey Detection (2 classes: prey=1, no prey=0)
 - coming soon
@@ -39,22 +41,22 @@ This repository is closely related to the [bouncer](https://github.com/mesopotat
 - **labelling/Labelling2.py**: Psychopy script for labelling images. This script was originally run in a different (deprecated) [repository](https://github.com/MirelaElla/CatDetector/tree/master/CatMouth)
 
 ## Todos
-- [ ] Add libraries to requirements.txt file
+- [x] Add libraries to requirements.txt file (done but maybe still incomplete)
 - [x] Train Cat classification model (HRS)
 - [x] Implement Cat classification model
 - [x] Move labeling procedure from deprecated CatDetector repo to CatWatcher repo
-- [ ] Train Simba Prey model
+- [x] Train Simba Prey model (done but can be improved)
 - [ ] Implement Simba Prey model
 - [ ] Collect more data for prey images of Hali and Rex *(cuz they're no saints either)*
 - [ ] Create a generalized prey detection model
     - [ ] Converting images to grayscale could be useful, as it allows us to use more diverse images.
 
 ### Improvements for Cat Approach Model
-- [ ] Avoid resizing images to squares to prevent distortions
-- [ ] Investigate keeping original camera frame proportions
+- [x] Avoid resizing images to squares to prevent distortions --> nah it is easier to handle quadratic images
+- [x] Investigate keeping original camera frame proportions --> images are too big, model size gets too big for Raspberry Pi 3
 
 ### Improvements for Cat Classification Model
-- [ ] Correct width/height mix-up to prevent distortions
+- [x] Correct width/height mix-up to prevent distortions --> made it quadratic
 - [ ] Address imbalanced dataset (Rex is underrepresented)
 - [ ] Handle other animals (foreign cat, dog, fox, "Marder") - see examples/other
 
